@@ -19,8 +19,8 @@ import lombok.Setter;
 public class State {
 	
 	@Id
-	@SequenceGenerator(name="state_id_seq",
-	   				   sequenceName = "state_id_seq")
+	@SequenceGenerator(name="state_id_seq",schema="full-stack-ecommerce",
+	   				   sequenceName = "full-stack-ecommerce.state_id_seq")
 	@GeneratedValue(strategy = GenerationType.SEQUENCE,
 					generator = "state_id_seq")
 	@Column(name="id")
